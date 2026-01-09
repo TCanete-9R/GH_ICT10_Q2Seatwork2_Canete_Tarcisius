@@ -28,6 +28,13 @@ def compute(e):
 
     gwa = weighted_sum / total_units
 
-    display(f" Name: {fname} {lname}", target='output')
-    display(f" Grades : {grade_summary}", target='output')
-    display(f" Your General Weighted Average: {gwa:.2f}", target='output')
+    if gwa > 74: # if statement
+        status = "PASSED"
+    else: # else statement
+        status = "FAILED"
+
+    display(f"Name: {fname} {lname}", target='output')
+    display(f"Grades:\n{grade_summary}", target='output')
+    display(f"General Weighted Average: {gwa:.2f}", target='output')
+    display(f"Status: {status}", target='output')
+
