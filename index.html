@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Drill 1</title>
+</head>
+<body>
+    <div id="div1">
+    <h1>Student Grade Calculator</h1>
+
+    <label>First Name: </label><input type="text" id="fname"><br>
+    <label>Last Name: </label><input type="text" id="lname"><br><br>
+
+    <label>Enter your grades:</label><br>
+
+    <label>Filipino:</label><input type="number" id="filipino"><br>
+    <label>English:</label><input type="number" id="english"><br>
+    <label>Math:</label><input type="number" id="math"><br>
+    <label>Science:</label><input type="number" id="science"><br>
+    <label>Social Studies:</label><input type="number" id="social_studies"><br>
+    <label>PE:</label><input type="number" id="pe"><br><br>
+
+    <button py-click="compute">Calculate GWA</button>
+    </div>
+    
+    <div id='output'></div>
+    <script type="py" src="main.py"></script>
+</body>
+</html>
